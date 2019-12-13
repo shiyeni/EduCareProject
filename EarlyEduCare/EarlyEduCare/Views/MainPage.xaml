@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EarlyEduCare.Views.MainPage"
+             Title="{Binding Title}"
+             BackgroundColor="#ffffff">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+
+        <Image Source="goood.png" HeightRequest="300" WidthRequest="300" Margin="0"/>
+        <Button  Text="Sign Up" WidthRequest="380" Padding="20" BackgroundColor="#008577" CornerRadius="10"
+                 FontSize="Medium" TextColor="White" Margin="50,0"
+                 Command="{Binding SignUpCreateCommand}" 
+                 FontAttributes="Bold"/>
+        <Label Text="OR" FontSize="Medium" TextColor="Black" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" />
+        <Button  Text="Login" WidthRequest="380" Padding="20" 
+                BackgroundColor="#008577" CornerRadius="10" FontSize="Medium" 
+                TextColor="White" Margin="50,0" Command="{Binding LoginCreateCommand}"
+                 FontAttributes="Bold"/>
+        <BoxView Color="#008577" HeightRequest="2" HorizontalOptions="Fill" Margin="50,20,50,0"/>
+
+    </StackLayout>
+</ContentPage>

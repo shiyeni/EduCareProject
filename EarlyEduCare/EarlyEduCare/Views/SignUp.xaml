@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="EarlyEduCare.Views.SignUp"
+             Title="Sign Up">
+  
+ <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+        <Label Text="REGISTER" HorizontalOptions="Center" TextColor="Black" FontSize="Large" FontAttributes="Bold" />
+
+        <Entry Placeholder="Username.." Margin="50,20,50,20"  PlaceholderColor="black"/>
+        <Entry Placeholder="Last Name.." Margin="50,0,50,0"  PlaceholderColor="Black"/>
+        <Entry Placeholder="Enter Email.." Margin="50,20,50,20"  PlaceholderColor="Black"/>
+        <Entry Placeholder="Enter Password.." Margin="50,0,50,0"  PlaceholderColor="Black" IsPassword="True"/>
+        <Switch IsToggled="False" HeightRequest="100" HorizontalOptions="StartAndExpand" OnColor="#278fd7" Margin="50,0"/>
+        <Button Text="Submit" WidthRequest="380" Padding="10" BackgroundColor="#278fd7" Margin="50,0,50,0" CornerRadius="10" FontSize="Medium" TextColor="White" Command="{Binding SubmitFormCommand}"/>
+        <BoxView Color="Gray" HeightRequest="2" HorizontalOptions="Fill" Margin="50,20,50,0"/>
+
+    </StackLayout>
+</ContentPage>

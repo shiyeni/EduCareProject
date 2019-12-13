@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="EarlyEduCare.Views.Login"
+              >
+
+    <StackLayout Margin="10,100,10,10">
+        <Label Text="LOGIN FORM"  TextColor="#278fd7" FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" />
+
+        <Entry Placeholder="Enter Your Email.." Margin="50,50,50,20" TextColor="#278fd7" PlaceholderColor="Black"/>
+        <Entry Placeholder="Enter Your Password.." Margin="50,0"  TextColor="#278fd7" PlaceholderColor="Black" IsPassword="True"/>
+        <Switch IsToggled="False" HeightRequest="100" HorizontalOptions="StartAndExpand" OnColor="#278fd7" Margin="50,0"/>
+        <Button Text="Send" WidthRequest="380" Padding="10" BackgroundColor="#278fd7" Margin="50,0,50,0" CornerRadius="10" FontSize="Medium" TextColor="White" Command="{Binding SendFormCommand}"/>
+        <BoxView Color="Gray" HeightRequest="2" HorizontalOptions="Fill" Margin="50,20,50,0"/>
+    </StackLayout>
+</ContentPage>

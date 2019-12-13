@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:prism="http://prismlibrary.com"
+                  xmlns:globalization="clr-namespace:System.Globalization;assembly=netstandard"
+                  prism:ViewModelLocator.AutowireViewModel="True"
+                  x:Class="EarlyEduCare.Views.BurgerMenu"
+                  >
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+
+            <ScrollView>
+                <StackLayout>
+                    <FlexLayout  Padding="0,20,0,0" Margin="0">
+                        <Image Source="Arrow.png" HeightRequest="20" WidthRequest="50" Margin="0,20,0,20"/>
+                        <Button Text="Tutorials" WidthRequest="100" BackgroundColor="Transparent" TextColor="#278fd7" Command="{Binding PdfCommand}"/>
+                    </FlexLayout>
+                    <!-- menu -->
+
+                    <FlexLayout Padding="0" Margin="0,-30,0,0">
+                        <Image Source="Arrow.png" HeightRequest="20" WidthRequest="50" Margin="0,20,0,20"/>
+                        <Button Text="Videos" WidthRequest="100" Margin="-10,0,0,0" BackgroundColor="Transparent"  FontSize="Small" TextColor="#278fd7" Command="{Binding VideoCommand}"/>
+                    </FlexLayout>
+                    
+                    <!-- menu -->
+                    
+                    <FlexLayout Padding="0" Margin="0,-30,0,0">
+                        <Image Source="Arrow.png" HeightRequest="20" WidthRequest="50" Margin="0,20,0,20"/>
+                        <Button Text="Summary" WidthRequest="100" Margin="0" BackgroundColor="Transparent"  FontSize="Small" TextColor="#278fd7" Command="{Binding NotesCommand}"/>
+                    </FlexLayout>
+
+                
+                </StackLayout>
+                
+        </ScrollView> 
+        </ContentPage>
+    </MasterDetailPage.Master>
+    
+</MasterDetailPage>
